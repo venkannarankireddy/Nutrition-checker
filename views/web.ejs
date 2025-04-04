@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nutrition Checker</title>
+
+  <!-- Fonts and Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Josefin Sans', sans-serif;
+      box-sizing: border-box;
+    }
+
+    /* Background Styling */
+    body {
+      background-image: url('/images/nutrition_bg.jpeg'); 
+      background-repeat: no-repeat;
+      background-size: cover; /* Adjusted to cover the entire viewport */
+      background-position: center;
+      background-attachment: fixed;
+      min-height: 100vh;
+      color: #fff;
+    }
+
+    /* Dark Overlay for Better Readability */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    /* Fixed Navigation Bar */
+    .navbar {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .logo {
+      font-size: 28px;
+      color: #f9004d;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .navbar ul li {
+      margin-left: 20px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #00ffcc;
+    }
+
+    /* Main Content Box */
+    .main {
+      width: 500px;
+      margin: 120px auto 0;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 30px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    .main h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .main p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #f1f1f1;
+    }
+
+    .main a {
+      color: #00ffe5;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .main a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="overlay"></div> <!-- Dark Overlay -->
+
+  <!-- Separate Navigation Bar -->
+  <div class="navbar">
+    <h2 class="logo">Nutrition Checker</h2>
+    <ul>
+      <li><a href="/register">Register</a></li>
+      <li><a href="/login">Login</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <h2><b>About Us</b></h2>
+    <p>
+      Welcome to <b>Nutrition Checker</b> – your ultimate companion for a healthier lifestyle!  
+      <br><br>
+      Ever wondered how much nutrition is in your food? Our platform helps you track and analyze the nutrients in the foods you consume, making healthy meal planning easier than ever. 
+      <br><br>
+      🔹 Discover the nutritional value of your favorite foods.  
+      🔹 Plan meals with accurate data.  
+      🔹 Achieve your health goals effortlessly.  
+      <br><br>
+      <b>Join us today!</b>  
+      <br><br>
+      Don't have an account? <a href="/register">Sign up now</a><br><br>
+      Already a member? <a href="/login">Log in here</a>
+    </p>
+  </div>
+
+</body>
+</html>
